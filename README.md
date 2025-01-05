@@ -1,4 +1,3 @@
-
 # Minimum Coin Calculator
 
 This project includes a frontend and backend service to solve the Minimum Coin problem by calculating the least number of coins required to meet a target amount. The project supports local deployment and containerized deployment.
@@ -26,35 +25,28 @@ This project includes a frontend and backend service to solve the Minimum Coin p
 
 The backend is built using Dropwizard and provides functionality to calculate the minimum number of coins required based on the target amount and coin denominations.
 
-You can find the backend source code and setup instructions in the [BackEnd GitHub Repository](https://github.com/HZHENJ/2025-HUANGZHENJIA-coins-backend.git).
-
 ### Running the Backend Service
 
 #### Locally
 
 1. **Build the backend service**:
    ```bash
-
+   mvn clean package
    ```
-
-mvn clean package
-
-```
 2. **Run the service**:
    ```bash
-java -jar target/proj-1.0-SNAPSHOT.jar server src/main/resources/config.yml
-```
-
+   java -jar target/proj-1.0-SNAPSHOT.jar server src/main/resources/config.yml
+   ```
 3. **Test the endpoints**:
-
-- Get Start: `http://localhost:8080/api/hello`
-- Main service: `http://localhost:8080/api/minimum-coins`
+  - Get Start: `http://localhost:8080/api/hello`
+  - Main service: `http://localhost:8080/api/minimum-coins`
 
 ---
 
 ## Frontend Service
 
 The frontend is built with React.js and provides a simple interface to interact with the backend service.
+You can find the frontend source code and setup instructions in the [FrontEnd GitHub Repository](https://github.com/HZHENJ/2025-HUANGZHENJIA-coins-frontend.git).
 
 ### Running the Frontend Service
 
@@ -62,17 +54,12 @@ The frontend is built with React.js and provides a simple interface to interact 
 
 1. **Install dependencies**:
    ```bash
-
+   npm install
    ```
-
-npm install
-
-```
 2. **Run the service**:
    ```bash
-npm run dev
-```
-
+   npm run dev
+   ```
 3. **Access the application**: The frontend service will be available at `http://localhost:3000`.
 
 ---
@@ -84,12 +71,8 @@ npm run dev
 1. **Place the `docker-compose.yml` file in the project root directory**.
 2. **Run the following command to start the services**:
    ```bash
-
+   sudo docker-compose up --build
    ```
-
-sudo docker-compose up --build
-
-```
 3. **Access the services**:
   - Frontend: `http://<your-public-ip>:3000`
   - Backend: `http://<your-public-ip>:8080/api/hello`
@@ -99,4 +82,3 @@ sudo docker-compose up --build
 ## Notes
 
 - Ensure that necessary ports (3000 and 8080) are open in your cloud provider's security group or firewall settings.
-```
