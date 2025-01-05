@@ -25,7 +25,7 @@ This project includes a frontend and backend service to solve the Minimum Coin p
 
 The backend is built using Dropwizard and provides functionality to calculate the minimum number of coins required based on the target amount and coin denominations.
 
-You can find the frontend source code and setup instructions in the [BackEnd GitHub Repository](https://github.com/HZHENJ/2025-HUANGZHENJIA-coins-backend.git).
+You can find the backend source code and setup instructions in the [BackEnd GitHub Repository](https://github.com/HZHENJ/2025-HUANGZHENJIA-coins-backend.git).
 
 ### Running the Backend Service
 
