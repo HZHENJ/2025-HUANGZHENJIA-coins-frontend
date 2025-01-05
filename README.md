@@ -25,6 +25,8 @@ This project includes a frontend and backend service to solve the Minimum Coin p
 
 The backend is built using Dropwizard and provides functionality to calculate the minimum number of coins required based on the target amount and coin denominations.
 
+You can find the frontend source code and setup instructions in the [BackEnd GitHub Repository](https://github.com/HZHENJ/2025-HUANGZHENJIA-coins-backend.git).
+
 ### Running the Backend Service
 
 #### Locally
@@ -38,15 +40,15 @@ The backend is built using Dropwizard and provides functionality to calculate th
    java -jar target/proj-1.0-SNAPSHOT.jar server src/main/resources/config.yml
    ```
 3. **Test the endpoints**:
-  - Get Start: `http://localhost:8080/api/hello`
-  - Main service: `http://localhost:8080/api/minimum-coins`
+
+- Get Start: `http://localhost:8080/api/hello`
+- Main service: `http://localhost:8080/api/minimum-coins`
 
 ---
 
 ## Frontend Service
 
 The frontend is built with React.js and provides a simple interface to interact with the backend service.
-You can find the frontend source code and setup instructions in the [FrontEnd GitHub Repository](https://github.com/HZHENJ/2025-HUANGZHENJIA-coins-frontend.git).
 
 ### Running the Frontend Service
 
@@ -74,8 +76,9 @@ You can find the frontend source code and setup instructions in the [FrontEnd Gi
    sudo docker-compose up --build
    ```
 3. **Access the services**:
-  - Frontend: `http://<your-public-ip>:3000`
-  - Backend: `http://<your-public-ip>:8080/api/hello`
+
+- Frontend: `http://<your-public-ip>:3000`
+- Backend: `http://<your-public-ip>:8080/api/hello`
 
 ---
 
